@@ -18,19 +18,19 @@ void input ()
         }
         else
         {
-            cout << "\n[i] jumlah element tidak boleh lebih dari sepuluh,silahkan coba lagi.\n";
+            cout << "\n[i] jumlah element tidak boleh lebih dari 10,silahkan coba lagi.\n";
         }
     }
-}
 
-cout << "\n===================================\n";
-cout << "          Masukan Element Array      \n";
-cout << " ====================================\n";
+    cout << "\n===================================\n";
+    cout << "          Masukan Element Array      \n";
+    cout << " ====================================\n";
 
-for (int i = 0; i < nPanjang i++)
-{
-    cout << "Data ke-" << i + 1 << " = ";
-    cin >> element[i];
+    for (int i = 0; i < nPanjang; i++)
+    {
+        cout << "Data ke-" << i + 1 << " = ";
+        cin >> element[i];
+    }
 }
 
 
@@ -66,6 +66,54 @@ void display()
         }
     }
     cout << endl;
+}
+
+void binarySearch()
+{
+    char ulang;
+    do
+    {
+        cout << "\n=========================\n";
+        cout << "  Pencarian Binary Search    ";
+        cout << "=============================";
+
+        cout << "Masukan element yang ingin dicari"
+        cin >> x;
+
+        int low = 0;
+        int high = nPanjang - 1;
+
+        do
+        {
+            int mid = (low + high) / 2;
+
+            if (element[mid] == x)
+            {
+                cout << "\n[] " << x << " ditemukan pada indeks " << mid << "\n";
+                return;
+            }
+
+            if (x < element[mid])
+            {
+                high = mid - 1;
+            }
+
+            if (x > element[mid])
+            {
+                low = mid + 1;
+            }
+
+        } while (low <= high);
+
+        if (low > high)
+        {
+            cout << "\n[x] Elemen " << x << " tidak ditemukan dalam array.\n";
+        }
+
+        cout << "\nIngin mencari lagi? (y/n): ";
+        cin >> ulang:
+        
+    }
 }
 
 

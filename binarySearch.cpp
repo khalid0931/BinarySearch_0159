@@ -64,13 +64,12 @@ void display()
         if (j < nPanjang - 1)
         {
             cout << " -> ";
-        }
+        },
     }
     cout << endl;
 }
 
 void binarySearch()
-
 {
     char ulang;
     do

@@ -78,7 +78,7 @@ void binarySearch()
         cout << "  Pencarian Binary Search    ";
         cout << "=============================";
 
-        cout << "Masukan element yang ingin dicari"
+        cout << "Masukan element yang ingin dicari";
         cin >> x;
 
         int low = 0;
@@ -112,7 +112,7 @@ void binarySearch()
         }
 
         cout << "\nIngin mencari lagi? (y/n): ";
-        cin >> ulang:
+        cin >> ulang;
         
     }while (ulang == 'y' || ulang == 'Y');
 }

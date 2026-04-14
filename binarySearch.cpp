@@ -70,6 +70,7 @@ void display()
 }
 
 void binarySearch()
+
 {
     char ulang;
     do
@@ -116,7 +117,6 @@ void binarySearch()
         
     }while (ulang == 'y' || ulang == 'Y');
 }
-
 
 int main()
 {
